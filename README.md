@@ -1,8 +1,7 @@
 # 🛡️ RazorShield AI — Autonomous FinTech Risk Sentinel & Chargeback Defense Engine
 
-> **Built for the Razorpay AI Buildathon 2026**  
-> **Track 02: AI Risk Manager**  
-> *Theme: "Stop the merchant losing money to fraud, returns and chargebacks with honest metrics, explainable AI, and defense-only security."*
+> **Next-Generation Autonomous Fraud Defense & Chargeback Operations Engine for Modern FinTech**  
+> *Real-time address entropy detection, sub-second bot mitigation, graph-based Sybil ring interception, and automated bank rebuttal dossiers.*
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg?style=flat&logo=FastAPI&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-19+-61DAFB.svg?style=flat&logo=React&logoColor=black)](https://react.dev)
@@ -190,15 +189,14 @@ razorshield-ai/
 
 ---
 
-## 🏆 Submission Checklist for Razorpay AI Buildathon 2026
+## 🎯 System Capabilities & Security Highlights
 
-- [x] **Track 02 Match**: Built specifically for *AI Risk Manager*.
-- [x] **Working Detector/Verifier**: Multi-vector entropy, velocity, and Sybil graph detection.
-- [x] **Autonomous Auto-Responder**: Compiles bank-ready Visa/Mastercard CE 3.0 dispute dossiers.
+- [x] **High-Throughput Risk Classifier**: Multi-vector entropy, velocity, and Sybil graph detection in <0.5ms.
+- [x] **Autonomous Dispute Auto-Responder**: Compiles bank-ready Visa/Mastercard CE 3.0 dispute dossiers.
 - [x] **Honest Held-Out Metrics**: Evaluated on 1,000 realistic transactions with explicit False-Positive cost analysis.
-- [x] **Defense-Only & Gated**: Every action bounded, explained, and cryptographically verified.
-- [x] **5-Minute Pitch Script**: Complete word-for-word pitch guide included in `docs/VIDEO_PITCH_SCRIPT.md`.
+- [x] **Defense-Only & Gated**: Every action bounded, explained, and cryptographically verified with SHA-256.
+- [x] **Interactive SOC Dashboard**: Full-stack dark-mode React interface for risk operations.
 
 ---
 
-**Built with ❤️ for Indian FinTech merchants and Razorpay.**
+**Built with ❤️ for Modern FinTech & Secure Digital Payments.**

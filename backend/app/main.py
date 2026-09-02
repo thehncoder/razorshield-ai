@@ -8,7 +8,7 @@ from app.api.routes_audit import router as audit_router
 
 app = FastAPI(
     title="RazorShield AI — Autonomous FinTech Risk Sentinel & Chargeback Defense Engine",
-    description="Built for Razorpay AI Buildathon 2026 (Track 02: AI Risk Manager). Defense-First Explainable AI Risk & Dispute Auto-Responder.",
+    description="Defense-First Explainable AI Risk & Dispute Auto-Responder for Modern FinTech.",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc"
@@ -35,8 +35,7 @@ async def root_healthcheck():
     return {
         "system": "RazorShield AI",
         "status": "OPERATIONAL",
-        "track": "Track 02: AI Risk Manager",
-        "buildathon": "Razorpay AI Buildathon 2026",
+        "category": "Autonomous FinTech Risk & Dispute Sentinel",
         "api_docs": "/docs"
     }
 

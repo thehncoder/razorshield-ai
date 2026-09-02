@@ -1,7 +1,6 @@
 # RazorShield AI: Comprehensive Threat Model & Adversarial Defense Framework
 
-**Track 02: AI Risk Manager — Razorpay AI Buildathon 2026**
-**Author / Builder: Harshit & RazorShield Team**
+**Enterprise FinTech Risk & Threat Modeling Analysis**
 
 ---
 

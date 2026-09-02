@@ -1,6 +1,6 @@
 # RazorShield AI: System Architecture & Design Specification
 
-**Track 02: AI Risk Manager — Razorpay AI Buildathon 2026**
+**Production-Grade FinTech Risk Sentinel & Autonomous Dispute Operations**
 
 ---
 

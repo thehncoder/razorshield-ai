@@ -25,10 +25,10 @@ export default function Navbar({ activeTab, setActiveTab, ledgerValid, latencyMs
                   Razor<span className="text-blue-400">Shield</span> AI
                 </span>
                 <span className="text-xs px-2 py-0.5 rounded-full bg-blue-900/50 text-blue-300 border border-blue-700/50 font-medium">
-                  Track 02: AI Risk Manager
+                  Autonomous Risk Engine v1.0
                 </span>
               </div>
-              <p className="text-xs text-slate-400">Razorpay AI Buildathon 2026</p>
+              <p className="text-xs text-slate-400">FinTech Risk & Threat Defense Sentinel</p>
             </div>
           </div>
 
