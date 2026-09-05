@@ -21,6 +21,14 @@ export async function getRecentTransactions(limit = 20) {
   }
 }
 
+export async function clearTransactions() {
+  try {
+    await fetch(`${API_BASE}/transactions/clear`, { method: "POST" });
+  } catch (err) {
+    console.error("Failed to clear transactions:", err);
+  }
+}
+
 export async function getAllDisputes() {
   try {
     const res = await fetch(`${API_BASE}/disputes/all`);

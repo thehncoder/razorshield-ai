@@ -76,12 +76,14 @@ class RazorShieldRiskClassifier:
         payment_fraud_score = min(100.0, max(0.0, fraud_component + (trust_credit * 0.5)))
         sybil_ring_score = min(100.0, max(0.0, sybil_component))
 
-        # Overall composite score with weighted blend
-        base_composite = (rto_risk_score * 0.35) + (payment_fraud_score * 0.40) + (sybil_ring_score * 0.25)
-        overall_risk_score = round(min(100.0, max(0.0, base_composite)), 1)
+        # Overall composite score: max vector risk with weighted blend
+        max_vector_risk = max(rto_risk_score, payment_fraud_score, sybil_ring_score)
+        weighted_blend = (rto_risk_score * 0.35) + (payment_fraud_score * 0.40) + (sybil_ring_score * 0.25)
+        overall_risk_score = round(min(100.0, max(0.0, max(max_vector_risk, weighted_blend))), 1)
 
         # Policy Decision Gating
-        if overall_risk_score >= settings.BLOCK_THRESHOLD or sybil_ring_score >= 40:
+        has_critical_bot = any("Sub-Human" in f.name for f in all_factors)
+        if overall_risk_score >= settings.BLOCK_THRESHOLD or sybil_ring_score >= 35 or has_critical_bot:
             action = "BLOCK"
             confidence = min(0.98, 0.75 + (overall_risk_score / 400))
             reason = "High probability of malicious fraud or syndicate attack."

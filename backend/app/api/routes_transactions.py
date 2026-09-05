@@ -31,6 +31,13 @@ async def get_recent_transactions(limit: int = 50):
     return recent_evaluations[:limit]
 
 
+@router.post("/clear")
+async def clear_recent_transactions():
+    """Clears the live transaction feed for a fresh recording session."""
+    recent_evaluations.clear()
+    return {"status": "cleared"}
+
+
 @router.post("/razorpay-webhook")
 async def handle_razorpay_webhook(payload: Dict[str, Any]):
     """

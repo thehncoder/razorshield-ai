@@ -16,6 +16,19 @@ class SybilGraphSentinel:
     def __init__(self):
         self.graph = nx.Graph()
         self.max_nodes = 10000
+        self._seed_syndicate_cluster()
+
+    def _seed_syndicate_cluster(self):
+        # Pre-seed background graph connections for known syndicate hardware
+        shared_hw = "dev:dev_sybil_ring_shared_hw"
+        shared_ip = "ip:103.45.12.89"
+        self.graph.add_node(shared_hw, type="device", label="dev_sybil")
+        self.graph.add_node(shared_ip, type="ip", label="103.45.12.89")
+        for i in range(1, 4):
+            ring_member = f"cust:cust_sybil_historical_0{i}"
+            self.graph.add_node(ring_member, type="customer", label=f"Sybil Seed {i}")
+            self.graph.add_edge(ring_member, shared_hw, relation="uses_device")
+            self.graph.add_edge(ring_member, shared_ip, relation="from_ip")
 
     def _hash_address(self, addr) -> str:
         s = f"{addr.line1.lower().strip()}_{addr.pincode.strip()}"

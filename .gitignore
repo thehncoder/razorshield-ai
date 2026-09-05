@@ -36,3 +36,12 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Media & Pitch Video Automation Artifacts
+*.mp4
+*.webm
+*.aac
+*.wav
+audio_segments/
+build_perfect_sync_video.py
+VIDEO_SCRIPT.txt
